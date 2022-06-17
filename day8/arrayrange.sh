@@ -13,7 +13,6 @@ num[i]=$i
    done
  	  if [ $rev -eq $i ]
  	  then
-      		echo -n " $i "
+      		echo " $i "
     	  fi
 done
-echo "${num[@]}"
