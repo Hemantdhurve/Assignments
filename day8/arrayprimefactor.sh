@@ -8,7 +8,7 @@ for ((i=2; i*i<=num; i++))
 do
 	while [ $((num % i)) -eq 0 ]
 	do
-		num=$((num / i))
+	num=$((num / i))
 		a[counter]=$i
 		counter=$((counter + 1 ))
 	done
@@ -24,3 +24,4 @@ done
 echo "${a[@]}"
 echo "${!a[@]}"
 echo "${#a[@]}"
+

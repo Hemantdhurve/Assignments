@@ -12,7 +12,7 @@ do
 		then
 	     		 dice[$randomcheck]=0
 		else
-	   	 	dice[$randomcheck]=$((dice[$randomcheck]+1))
+	   	 	dice[$randomcheck]=$(( dice[$randomcheck]+1 ))
 		fi
 done
 

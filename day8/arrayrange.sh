@@ -7,13 +7,13 @@ num[i]=$i
    rev=0
    for ((j=0; num[i]>0; j++))
    do
-      x=$((${num[$i]} % 10))
-      rev=$(((rev * 10) + x))
-      num[i]=$((${num[$i]} / 10))
+      x=$(( ${num[$i]} % 10 ))
+      rev=$(( (rev * 10) + x ))
+      num[i]=$(( ${num[$i]} / 10 ))
    done
  	  if [ $rev -eq $i ]
  	  then
       		echo -n " $i "
     	  fi
 done
-echo "${num[$i]}"
+echo "${num[@]}"
